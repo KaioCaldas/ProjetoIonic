@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CadastroPage } from '../cadastro/cadastro';
 
@@ -8,8 +8,15 @@ import { CadastroPage } from '../cadastro/cadastro';
 })
 export class LoginPage {
 
+  @ViewChild('email') email;
+  @ViewChild('password') password;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  login() {
+    console.log(this.email.value, this.password.value);
   }
 
   irParaCadastro() {
