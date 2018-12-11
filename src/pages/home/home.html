@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Aluguel de Carros
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <button ion-button (click)="irParaLogin()">Login</button>
+    <button ion-button (click)="irParaBusca()">Busca</button>
+    <button ion-button (click)="irParaLocadoras()">Locadoras</button>
+    <button ion-button (click)="irParaDados()">Dados</button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+        <h2 class="slide-title">O carro que você deseja</h2>
+      </ion-toolbar>
+      <img src="assets/imgs/slide1.jpg" class="slide-image"/>
+      <p class="pslide">O aplicativo faz uma busca completa em todas as locadoras parceiras para trazer um carro com as características que você deseja.</p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+        <h2 class="slide-title">Preços acessíveis</h2>
+      </ion-toolbar>
+      <img src="assets/imgs/slide2.jpg" class="slide-image"/>
+      <p class="pslide">Compare os preços de diferentes locadoras e economize para sua viagem.</p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+        <h2 class="slide-title">Sem dor de cabeça</h2>
+      </ion-toolbar>
+      <img src="assets/imgs/slide3.jpg" class="slide-image"/>
+      <p class="pslide">Veja as melhores ofertas de seguro para viajar com tranquilidade.</p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+        <h2 class="slide-title">Compartilhe sua experiência</h2>
+      </ion-toolbar>
+      <img src="assets/imgs/slide4.jpg" class="slide-image"/>
+      <p class="pslide">Dê sua avaliação sobre a locadora e o carro contratados. Seu feedback ajudará outros usuários do aplicativo!</p>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
