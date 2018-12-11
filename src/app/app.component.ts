@@ -8,6 +8,7 @@ import { BuscaPage } from '../pages/busca/busca';
 import { LocadorasPage } from '../pages/locadoras/locadoras';
 import { DadosPage } from '../pages/dados/dados';
 import { LoginPage } from '../pages/login/login';
+import { CadastroPage } from '../pages/cadastro/cadastro';
 
 @Component({
   templateUrl: 'app.html'

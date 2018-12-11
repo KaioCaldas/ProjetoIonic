@@ -10,6 +10,7 @@ import { BuscaPage } from '../pages/busca/busca';
 import { LocadorasPage } from '../pages/locadoras/locadoras';
 import { DadosPage } from '../pages/dados/dados';
 import { LoginPage } from '../pages/login/login';
+import { CadastroPage } from '../pages/cadastro/cadastro';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginPage } from '../pages/login/login';
     BuscaPage,
     LocadorasPage,
     DadosPage,
-    LoginPage
+    LoginPage,
+    CadastroPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { LoginPage } from '../pages/login/login';
     BuscaPage,
     LocadorasPage,
     DadosPage,
-    LoginPage
+    LoginPage,
+    CadastroPage
   ],
   providers: [
     StatusBar,

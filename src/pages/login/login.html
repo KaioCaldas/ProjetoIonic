@@ -10,7 +10,7 @@
     <ion-list>
 
         <ion-item>
-          <ion-label fixed>Usuário</ion-label>
+          <ion-label fixed>Email</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
     
@@ -23,5 +23,12 @@
     
     <div padding>
         <button ion-button color="primary" block>Login</button>
+    </div>
+
+    <div padding>
+        <h2>Não tem cadastro?</h2>
+    </div>
+    <div padding>
+        <button ion-button color="primary" block (click)="irParaCadastro()">Registre-se</button>
     </div>
 </ion-content>
