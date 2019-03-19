@@ -1,5 +1,7 @@
 {
   "name": "alugaCarro",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
