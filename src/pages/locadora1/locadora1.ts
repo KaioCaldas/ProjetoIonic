@@ -18,6 +18,13 @@ export class Locadora1Page {
   constructor(private navParams: NavParams, private view: ViewController) {
   }
 
+  locData1 = {
+    nome: 'Locadora Brasil',
+    endereco: 'Rua Aleatória',
+    bairro: 'Centro',
+    telefone: '2222-2222'
+  };
+
   ionViewWillLoad() {
     const data = this.navParams.get('data');
     console.log(data);
